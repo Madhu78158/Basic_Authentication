@@ -1,15 +1,7 @@
 import mongoose from "mongoose";
+import { env } from "./env";
 
-const connectDB = () => {
-  mongoose
-    .connect("mongodb://localhost:27017/auth_db")
-    .then(() => {
-      console.log("MongoDB Connected");
-    })
-    .catch((err) => {
-      console.error("MongoDB connection failed", err);
-      process.exit(1);
-    });
+export const connectDB = async (): Promise<void> => {
+  await mongoose.connect(env.mongoUri);
+  console.log("MongoDB connected");
 };
-
-export default connectDB;

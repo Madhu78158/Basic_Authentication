@@ -124,11 +124,12 @@ Server → Verifies JWT → Trusts user
 
 
 Libraries (Installed):
-1. express 
-2. mongoose 
-3. bcrypt 
-4. jsonwebtoken 
+1. express
+2. mongoose
+3. bcrypt
+4. jsonwebtoken
 5. dotenv
+6. -D @types/express ts-node nodemon
 
 JWT:
 Header,Payload,Signature
