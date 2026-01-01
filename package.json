@@ -7,15 +7,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Srav125/Basic_Authentication.git"
+    "url": "git+https://github.com/Madhu78158/Basic_Authentication.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Srav125/Basic_Authentication/issues"
+    "url": "https://github.com/Madhu78158/Basic_Authentication/issues"
   },
-  "homepage": "https://github.com/Srav125/Basic_Authentication#readme",
+  "homepage": "https://github.com/Madhu78158/Basic_Authentication#readme",
   "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
