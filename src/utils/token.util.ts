@@ -1,5 +1,7 @@
 import jwt from "jsonwebtoken";
 import { env } from "../config/env";
+import dotenv from "dotenv";
+dotenv.config();
 
 export interface JwtPayload {
   userId: string;
@@ -7,7 +9,7 @@ export interface JwtPayload {
 }
 
 export const generateToken = (payload: JwtPayload): string =>
-  jwt.sign(payload, env.jwtSecret, { expiresIn: env.jwtExpiresIn });
+  jwt.sign(payload, env.jwtSecret);
 
 export const verifyToken = (token: string): JwtPayload =>
   jwt.verify(token, env.jwtSecret) as JwtPayload;
